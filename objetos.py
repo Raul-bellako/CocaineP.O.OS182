@@ -25,22 +25,25 @@ Villano =Personaje(especieV, nombreV, alturaV)
 
 #Usamos los atributosdel heroe y villano
 print("")
-print ("El persobaje se llama" + Heroe.nombre)
-print ("Pertenece a la especie" + Heroe.especie)
-print ("Y una altura de " + str(Heroe.altura))
+print ("El persobaje se llama" + Heroe.getNombre())
+print ("Pertenece a la especie" + Heroe.getEspecie())
+print ("Y una altura de " + str(Heroe.getAltura()))
 print("")
 Heroe.correr(True)
 Heroe.lanzarGranadas()
 Heroe.recargarArma(recargaH)
 print("")
 
-print ("El persobaje se llama" + Villano.nombre)
-print ("Pertenece a la especie" + Villano.especie)
-print ("Y una altura de " + str(Villano.altura))
+print ("El persobaje se llama" + Villano.getNombre())
+print ("Pertenece a la especie" + Villano.getEspecie())
+print ("Y una altura de " + str(Villano.getAltura()))
 print("")
 Villano.correr(True)
 Villano.lanzarGranadas()
 Villano.recargarArma(recargaV)
+Villano.__pensar()
+
+
 
 
 
